@@ -7,7 +7,6 @@ def on_on_overlap(sprite, otherSprite):
     global game_state
     game_state = 3
 sprites.on_overlap(SpriteKind.player, SpriteKind.projectile, on_on_overlap)
-
 projectile: Sprite = None
 game_state = 0
 nathan = sprites.create(img("""
